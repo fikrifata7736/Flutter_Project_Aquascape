@@ -143,10 +143,10 @@ class _DashboardFanState extends State<DashboardFan> {
   }
 }
 
-void _button(BuildContext context) {
-  final Scaffold = ScaffoldMessenger.of(context);
-  Scaffold.showSnackBar(SnackBar(content: const Text('Halo')));
-}
+// void _button(BuildContext context) {
+//   final Scaffold = ScaffoldMessenger.of(context);
+//   Scaffold.showSnackBar(SnackBar(content: const Text('Halo')));
+// }
 
 // class Fan {
 //   final bool status;

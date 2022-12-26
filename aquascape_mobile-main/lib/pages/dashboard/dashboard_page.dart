@@ -46,19 +46,7 @@ class _DashboardPageState extends State<DashboardPage> {
               },
               splashColor: Colors.black,
               child: Center(
-                child: Column(
-                  children: const <Widget>[
-                    Icon(
-                      Icons.lightbulb_outline,
-                      size: 100,
-                      color: Colors.black,
-                    ),
-                    Text(
-                      "Lampu",
-                      style: TextStyle(fontSize: 17.0),
-                    ),
-                  ],
-                ),
+                child: Image.asset('assets/images/ceiling-lamp.gif'),
               ),
             ),
           ),
@@ -81,16 +69,8 @@ class _DashboardPageState extends State<DashboardPage> {
               },
               splashColor: Colors.black,
               child: Center(
-                  child: Column(
-                children: const <Widget>[
-                  Icon(
-                    Icons.sensors,
-                    size: 100,
-                    color: Colors.black,
-                  ),
-                  Text("Sensor PH", style: TextStyle(fontSize: 17.0)),
-                ],
-              )),
+                child: Image.asset('assets/images/thermometer.gif'),
+              ),
             ),
           ),
           Card(
@@ -112,16 +92,8 @@ class _DashboardPageState extends State<DashboardPage> {
               },
               splashColor: Colors.black,
               child: Center(
-                  child: Column(
-                children: const <Widget>[
-                  Icon(
-                    Icons.thermostat,
-                    size: 100,
-                    color: Colors.black,
-                  ),
-                  Text("Temperature", style: TextStyle(fontSize: 17.0)),
-                ],
-              )),
+                child: Image.asset('assets/images/temperature.gif'),
+              ),
             ),
           ),
           Card(
@@ -143,16 +115,8 @@ class _DashboardPageState extends State<DashboardPage> {
               },
               splashColor: Colors.black,
               child: Center(
-                  child: Column(
-                children: const <Widget>[
-                  Icon(
-                    Icons.restaurant,
-                    size: 100,
-                    color: Colors.black,
-                  ),
-                  Text("Fish Feeder", style: TextStyle(fontSize: 17.0)),
-                ],
-              )),
+                child: Image.asset('assets/images/burger.gif'),
+              ),
             ),
           ),
           Card(
@@ -174,16 +138,8 @@ class _DashboardPageState extends State<DashboardPage> {
               },
               splashColor: Colors.black,
               child: Center(
-                  child: Column(
-                children: const <Widget>[
-                  Icon(
-                    Icons.mode_fan_off_outlined,
-                    size: 100,
-                    color: Colors.black,
-                  ),
-                  Text("Fan", style: TextStyle(fontSize: 17.0)),
-                ],
-              )),
+                child: Image.asset('assets/images/fan.gif'),
+              ),
             ),
           )
         ],

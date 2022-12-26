@@ -22,7 +22,7 @@ class _SignInFormState extends State<SignInForm> {
   @override
   Widget build(BuildContext context) {
     return Expanded(
-      flex: 5,
+      flex: 30,
       child: Form(
         key: _formKey,
         child: Column(

@@ -14,7 +14,7 @@ class DashboardLight extends StatefulWidget {
 }
 
 class _DashboardLightState extends State<DashboardLight> {
-  String url = 'https://aquascape-project-tdfkwdj56a-et.a.run.app/Lamp';
+  String url = 'https://aquascapebackend-tdfkwdj56a-et.a.run.app/lamp';
   String? stringResponse;
   var mapResponse;
   var dataResponse;
@@ -27,7 +27,7 @@ class _DashboardLightState extends State<DashboardLight> {
     print('Data Lampu');
     http.Response response;
     response = await http.get(
-        Uri.parse('https://aquascape-project-tdfkwdj56a-et.a.run.app/Lamp'));
+        Uri.parse('https://aquascapebackend-tdfkwdj56a-et.a.run.app/lamp'));
 
     var res = jsonDecode(response.body);
     //print(res['status']);
@@ -45,7 +45,7 @@ class _DashboardLightState extends State<DashboardLight> {
   Future putDataTrue() async {
     try {
       print('putDataTrue');
-      final response = await http.put(Uri.parse(url + '/UpdateLampTrue'));
+      final response = await http.get(Uri.parse(url + '/true'));
       final json = '{"status": true}';
       // print(response.statusCode);
       if (response.statusCode == 200) {
@@ -64,7 +64,7 @@ class _DashboardLightState extends State<DashboardLight> {
   Future putDataFalse() async {
     try {
       print('putDataFalse');
-      final response = await http.put(Uri.parse(url + '/UpdateLampFalse'));
+      final response = await http.get(Uri.parse(url + '/false'));
       final json = '{"status": false}';
       // print(response.statusCode);
       if (response.statusCode == 200) {
@@ -112,6 +112,10 @@ class _DashboardLightState extends State<DashboardLight> {
               Switch(
                   value: _switch,
                   onChanged: (value) {
+                    // setState(() {
+                    //   _switch = value;
+                    //   print(_switch);
+                    // });
                     print(value);
                     if (_switch == true) {
                       putDataFalse();

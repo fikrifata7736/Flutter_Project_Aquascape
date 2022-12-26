@@ -18,12 +18,12 @@ class _LoginPageState extends State<LoginPage> {
     return Column(
       children: [
         Container(
-          height: 300,
+          height: 250,
           margin: EdgeInsets.only(),
           child: Image.asset(
             'assets/images/LOGO-pervasive.png',
-            height: 240,
-            width: 240,
+            height: 260,
+            width: 260,
           ),
         ),
         // shows header title
